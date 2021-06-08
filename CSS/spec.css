@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  /* background-color: #1e212b; */
+  background-image: url("./../Assets/pre-register/register_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.general h4 {
+  color: white;
+  text-align: center;
+}
+
+.general p {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 11px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.general img {
+  width: 78px;
+  margin-bottom: 28px;
+}
+
+.general {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  justify-content: space-evenly;
+}
+
+.req1,
+.req2,
+.req3 {
+  padding: 32px;
+  width: 12%;
+  height: 180px;
+  border-radius: 24px;
+}
+
+.req1:hover,
+.req2:hover,
+.req3:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.req1:hover > p,
+.req2:hover > p,
+.req3:hover > p {
+  visibility: visible;
+  opacity: 1;
+  animation: fade 400ms;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.general .req1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.general .req2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.general .req3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specific {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  margin-bottom: 70px;
+}
+
+table {
+  width: 60%;
+  color: white;
+  font-size: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color: white;
+  border-width: 4px;
+  border-top: none;
+}
+
+table,
+.table-title {
+  border-left: none;
+}
+
+table,
+.gpu {
+  border-bottom: none;
+}
+
+table,
+.best {
+  border-right: none;
+}
+
+th,
+td {
+  padding: 25px;
+}
+
+th,
+.table-title {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+td {
+  text-align: center;
+  font-size: 16px;
+}
+
+td:hover,
+th:hover {
+  background-color: aqua;
+  color: #1e212b;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .general img {
+    width: 48px;
+  }
+
+  .general {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .req1,
+  .req2,
+  .req3 {
+    margin-bottom: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    height: fit-content;
+  }
+
+  .general p {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .req1:hover > p,
+  .req2:hover > p,
+  .req3:hover > p {
+    animation: none;
+  }
+
+  table {
+    width: 100px;
+    color: white;
+    font-size: 10px;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: white;
+    border-width: 2px;
+    border-top: none;
+  }
+
+  table,
+  .table-title {
+    border-left: none;
+  }
+
+  table,
+  .gpu {
+    border-bottom: none;
+  }
+
+  table,
+  .best {
+    border-right: none;
+  }
+
+  th,
+  td {
+    padding: 25px;
+  }
+
+  th,
+  .table-title {
+    font-weight: 800;
+    font-size: 8px;
+  }
+
+  td {
+    text-align: center;
+    font-size: 8px;
+  }
+}
