@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("./../Assets/pre-register/register_bg_purp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+input,
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-top: 70px;
+}
+
+.title h1,
+.title p {
+  margin-top: 12px;
+  color: white;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 40px;
+}
+.title p {
+  font-size: 15px;
+}
+
+.form-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-container .label {
+  color: white;
+  font-size: 15px;
+  padding: 10px 30px;
+}
+
+.input-container .input input,
+select {
+  border: 3px solid transparent;
+  border-radius: 34px;
+  padding: 15px 30px 15px 30px;
+  width: 400px;
+  font-size: 16px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.input-container .input :focus::placeholder {
+  color: blueviolet;
+}
+
+.agreement {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+
+#agreement {
+  margin-right: 8px;
+}
+
+.btn-container {
+  margin-top: 55px;
+  margin-bottom: 75px;
+}
+
+#form-submit-btn {
+  border: none;
+  border-radius: 34px;
+  padding: 14px 58px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#form-submit-btn:hover {
+  opacity: 0.8;
+}
+
+.error-msg {
+  color: orange;
+  padding: 10px 30px;
+  font-size: 14px;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 30px;
+  }
+  .title p {
+    font-size: 10px;
+  }
+  .input-container .label {
+    color: white;
+    font-size: 10px;
+    padding: 10px 30px;
+  }
+  .input-container .input input,
+  select {
+    border: 3px solid transparent;
+    border-radius: 34px;
+    padding: 15px 30px 15px 30px;
+    width: 280px;
+    font-size: 14px;
+  }
+  #form-submit-btn {
+    border: none;
+    border-radius: 34px;
+    padding: 10px 50px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .error-msg {
+    font-size: 12px;
+  }
+  .agreement {
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .input-container .label {
+    color: white;
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .input-container .input input,
+  select {
+    border: 3px solid transparent;
+    border-radius: 34px;
+    padding: 10px 20px 10px 20px;
+    width: 200px;
+    font-size: 14px;
+  }
+  #form-submit-btn {
+    border: none;
+    border-radius: 34px;
+    padding: 10px 50px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+}

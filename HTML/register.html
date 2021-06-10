@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./../CSS/register.css" />
+    <script src="./../JS/regist-validation.js"></script>
+  </head>
+  <body>
+
+    <div class="title">
+        <h1>Pre-Register</h1>
+        <p>Register yourself to participate in the next beta test.</h6>
+    </div>
+    
+
+    <div class="form-container">
+      <form action="post">
+        <div class="input-container">
+          <div class="label">
+              <label for="username">Username</label>
+          </div>
+          <div class="input">
+              <input
+              name="username"
+              id="username"
+              type="text"
+              placeholder="Enter your username..."
+          />
+          </div>
+          <div class="error-msg">
+            <label id="error-username"></label>
+          </div>
+        </div>
+
+        <div class="input-container">
+            <div class="label">
+                <label for="email">Email</label>
+            </div>
+            <div class="input">
+                <input
+                name="email"
+                id="email"
+                type="text"
+                placeholder="Enter your email address..."
+            />
+            </div>
+            <div class="error-msg">
+              <label id="error-email"></label>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="label">
+                <label for="password">Password</label>
+            </div>
+            <div class="input">
+                <input
+                name="password"
+                id="password"
+                type="password"
+                placeholder="Enter your password..."
+            />
+            </div>
+            <div class="error-msg">
+              <label id="error-password"></label>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="label">
+                <label for="dob">Date of birth</label>
+            </div>
+            <div class="input">
+                <input name="dob" id="dob" type="date" />
+            </div>
+            <div class="error-msg">
+              <label id="error-dob"></label>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="label">
+                <label for="nationality">Nationality</label>
+            </div>
+
+            <div class="input">
+              <select name="nationality" id="nationality">
+                <option selected disabled value="">Select your nationality ...</option>
+                <option value="Afganistan">Afghanistan</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="England">England</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Korea">Korea</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Thailand">Thailand</option>
+                <option value="USA">USA</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="error-msg">
+              <label id="error-nationality"></label>
+            </div>
+        </div>
+
+        <div class="agreement">
+          <input type="checkbox" name="agreement" id="agreement">
+          <label for="agreement">I agree to the Terms of Service</label>
+        </div>
+        <div class="error-msg">
+          <label id="error-agreement"></label>
+        </div>
+      </form>
+      
+      <div class="btn-container">
+        <button id="form-submit-btn" onclick="validate()">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
