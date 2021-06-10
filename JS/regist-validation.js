@@ -29,8 +29,26 @@ let validate = () => {
                     || error_dob.innerHTML != "" || error_nationality.innerHTML != "" || error_agreement.innerHTML != "");
    
     if(isValid){
-        alert("Registration Success !!");
-        location.reload();
+        // alert("Registration Success !!");
+        let modalContainer = document.getElementById("modalbox");
+        let homeBtn = document.getElementById("home-btn");
+        let closeBtn = document.getElementById("close-btn");     
+        modalContainer.style.display = "block";
+        closeBtn.onclick = () => {
+            modalContainer.style.display = "none";
+            location.reload();
+        }
+        homeBtn.onclick = () => {
+            location.reload();
+            location.href = "./../HTML/home.html";
+            
+        }
+        window.onclick = (event) => {
+            if(event.target == modalContainer){
+                modalContainer.style.display = "none";
+                location.reload();
+            }
+        }
     } 
     
 }
