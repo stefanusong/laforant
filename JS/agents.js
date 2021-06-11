@@ -24,13 +24,3 @@ function toggleNavbarNav() {
         }
     }
 }
-
-// CONTENT SECTION - Redirect to .content-1 div.
-
-$(document).ready(function(){
-    $(".btn-class").click(function() {
-        $('html,body').animate({
-            scrollTop: $(".content-1").offset().top},
-            'slow');
-    });
-});

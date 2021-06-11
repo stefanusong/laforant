@@ -107,130 +107,10 @@ a {
 
 /* CONTENT SECTION */
 
-.banner {
-    background: url("./../Assets/home/home_background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 800px;
-    width: 100%;
-    height: 800px;
-    position: relative;
-}
 
-.banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.banner-content .banner-title {
-    font-size: 10em;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.banner-content .banner-description {
-    font-size: 1.5em;
-    align-self: center;
-}
-
-.banner-content .banner-btn,
-.btn-class,
-.view-btn {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-}
-
-.btn-class:hover {
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.banner-content .banner-btn .btn-class,
-.view-btn {
-    height: 50px;
-    width: 175px;
-    font-weight: bold;
-    background-image: linear-gradient(to right, #0085FF, #EC77FF);
-    border-radius: 15%/50%;
-    text-align: center;
-    color: white;
-}
-
-.view-btn:hover {
-    opacity: 0.6;
-}
-
-.content-1, .content-2, .content-3 {
-    height: auto;
-    padding: 50px;
-    background-color: #212332;
-    color: white;
-}
-
-.content-1 {
-    padding-top: 100px;
-}
-
-.container {
-    padding-left: 100px;
-    padding-right: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-}
-
-.title {
-    font-size: 4em;
-    font-weight: bold;
-    padding-bottom: 70px;
-}
-
-.heading {
-    font-size: 2em;
-    font-weight: bold;
-    padding-bottom: 30px;
-}
-
-.description {
-    font-size: 1em;
-    max-width: 500px;
-    padding-bottom: 30px;
-}
-
-
-
-.content-2 .subcontent-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-left: 10px;
-}
-
-.content-btn {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-}
-
-.content-2 img {
-    max-width: 450px;
-}
-
-.content-3 img {
-    max-width: 500px;
-}
 
 /* FOOTER SECTION */
+
 
 .footer {
     padding: 100px;
@@ -349,35 +229,6 @@ textarea {
     opacity: 0.6;
 }
 
-@media only screen and (max-width: 1100px) {
-    /* FOOTER SECTION */
-    
-    .footer {
-        padding: 50px;
-    }
-
-    .footer .title {
-        font-size: 1.5em;
-        padding-bottom: 10px;
-    }
-
-    .footer .footer-logo img {
-        max-width: 75px;
-    }
-
-    .footer .social .social-media {
-        width: 150px;
-    }
-
-    .youtube img, .twitter img, .instagram img, .facebook img{
-        max-width: 25px;
-    }
-
-    .quick-links .links {
-        font-size: 0.8em;
-    }
-}
-
 @media only screen and (max-width: 900px) {
 
     /* HEADER SECTION */
@@ -418,75 +269,7 @@ textarea {
 
     /* CONTENT SECTION */
 
-    .banner {
-        width: 100%;
-        height: 600px;
-        position: relative;
-    }
     
-    .banner-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-    }
-    
-    .banner-content .banner-title {
-        font-size: 6em;
-        font-weight: bold;
-        font-style: italic;
-    }
-    
-    .banner-content .banner-description {
-        font-size: 1em;
-        align-self: center;
-    }
-
-    .container {
-        display: block;
-    }
-
-    .content-1, .content-2, .content-3 {
-        padding: 25px;
-        padding-top: 50px;
-    }
-
-    .title {
-        font-size: 3em;
-        font-weight: bold;
-        padding-bottom: 50px;
-    }
-    
-    .heading {
-        font-size: 1.5em;
-        font-weight: bold;
-        padding-bottom: 20px;
-    }
-    
-    .description {
-        font-size: 1em;
-        max-width: 500px;
-        padding-bottom: 20px;
-    }
-
-    .content-1 img {
-        max-width: 200px;
-    }
-
-    .content-2 img {
-        max-width: 350px;
-        margin-bottom: 10px;
-    }
-
-    .content-2 .subcontent-2 {
-        margin-left: 0px;
-    }
-    
-    .content-3 img {
-        max-width: 400px;
-    }
 
     /* FOOTER SECTION */
     
@@ -517,11 +300,6 @@ textarea {
 }
 
 @media only screen and (max-width: 750px) {
-
-    .banner {
-        width: 100%;
-        height: 500px;
-    }
 
     /* FOOTER SECTION */
 
