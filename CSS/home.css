@@ -39,11 +39,28 @@
 .nav-btn {
     color: white;
     font-size: 15px;
-    font-weight: bold;
     text-decoration: none;
-    padding: 34px 30px;
+    padding: 33px 30px;
     display: block;
     transition: 0.3s;
+}
+
+.nav-btn {
+    font-weight: bold;
+}
+
+.nav-link {
+    border-bottom: 1px solid rgb(77, 77, 77);
+}
+
+.nav-link.active {
+    border-bottom: 1px solid #0085FF;
+    font-weight: bold;
+}
+
+.dropdown-menu .active {
+    border-right: 1px solid #0085FF;
+    font-weight: bold;
 }
 
 .nav-btn {
@@ -60,6 +77,10 @@ a {
     color: inherit;
 }
 
+.active {
+    border-bottom: 1px solid #0085FF;
+}
+
 .nav-btn {
     padding: 10px;
     width: 150px;
@@ -68,9 +89,9 @@ a {
     text-align: center;
 }
 
-.nav-btn:hover,
 .nav-link:hover {
     background-color: #61688f;
+    border-bottom: 1px solid #0085FF;
 }
 
 .dropdown {
@@ -81,7 +102,6 @@ a {
 .dropdown-item{
     color: white;
     font-size: 15px;
-    font-weight: bold;
     text-decoration: none;
     padding: 30px 55px;
     display: block;
@@ -94,6 +114,7 @@ a {
     position: absolute;
     background-color: #212332;
     color: white;
+    border-right: 1px solid rgb(77, 77, 77);
     z-index: 999;
 }
 
@@ -103,6 +124,7 @@ a {
 
 .dropdown-item:hover {
     background-color: #61688f;
+    border-right: 1px solid #0085FF;
 }
 
 /* CONTENT SECTION */
@@ -205,7 +227,9 @@ a {
     padding-bottom: 30px;
 }
 
-
+.subcontent-1 .description {
+    margin-right: 10px;
+}
 
 .content-2 .subcontent-2 {
     display: flex;
@@ -383,6 +407,7 @@ textarea {
     /* HEADER SECTION */
     .navbar .navbar-toggle {
         display: flex;
+        cursor: pointer;
     }
 
     .logo {
@@ -401,15 +426,20 @@ textarea {
         align-items: flex-start;
         position: relative;
         width: 100%;
-        margin-bottom: 20px;
     }
 
     .dropdown {
         display: block;
     }
 
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
     .nav-btn {
-        margin-top: 20px;
+        border-radius: 0/0;
+        width: auto;
+        margin-left: 0;
     }
 
     .dropdown .dropdown-menu {

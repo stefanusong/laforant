@@ -1,7 +1,14 @@
 // HEADER SECTION - RESPONSIVE NAVBAR
 
 var screen = window.matchMedia("(max-width: 900px)")
+let nav = document.getElementsByClassName('nav')[0]
 let state = false
+if (screen.matches) {
+    state = true
+}   else if (!screen.matches) {
+    state = false
+}
+
 
 screen.addListener(toggleNavbarNav)
 
@@ -25,9 +32,29 @@ function toggleNavbarNav() {
     }
 }
 
-// CONTENT SECTION - Redirect to .content-1 div.
-
 $(document).ready(function(){
+
+    // HEADER SECTION - RESPONSIVE DROPDOWN
+
+    let active = false;
+
+    $(".dropdown").click(function() {
+            if (!active) {
+                $('.dropdown-menu').css({
+                display: 'block'
+                })
+                active = true;
+            }
+            else if (active) {
+                $('.dropdown-menu').css({
+                display: 'none'
+                })
+                active = false;
+            }
+    })
+
+    // CONTENT SECTION - Redirect to .content-1 div.
+
     $(".btn-class").click(function() {
         $('html,body').animate({
             scrollTop: $(".content-1").offset().top},

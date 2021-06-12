@@ -2,6 +2,11 @@
 
 var screen = window.matchMedia("(max-width: 900px)")
 let state = false
+if (screen.matches) {
+    state = true
+}   else if (!screen.matches) {
+    state = false
+}
 
 screen.addListener(toggleNavbarNav)
 
@@ -26,20 +31,27 @@ function toggleNavbarNav() {
 }
 
 $(document).ready(function(){
-    // let totalSlide = $('.card-container div.card-slider div.card').length
-    // let slideWidth = $('.card-container div.card-slider div.card').width()
-    // let slideHeight = $('.card-container div.card-slider div.card').height()
-    // let totalWidth = slideWidth * totalSlide
 
-    // $('.card-container').css({
-    //     width : 990,
-    //     height: slideHeight,
-    // })
+    // HEADER SECTION - RESPONSIVE DROPDOWN
 
-    // $('.card-container div.card-slider').css({
-    //     width: 2100,
-    //     marginLeft: -330
-    // })
+    let active = false;
+
+    $(".dropdown").click(function() {
+        if (!active) {
+            $('.dropdown-menu').css({
+            display: 'block'
+            })
+            active = true;
+        }
+        else if (active) {
+            $('.dropdown-menu').css({
+            display: 'none'
+            })
+            active = false;
+        }
+    })
+
+    // CONTENT SECTION
 
     $('.card-container div.card-slider div.card:last-child').prependTo('.card-container div.card-slider')
 
