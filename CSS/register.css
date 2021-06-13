@@ -681,4 +681,11 @@ textarea {
     color: dodgerblue;
     border: 1px solid dodgerblue;
   }
+
+  /* FOOTER SECTION */
+
+  .footer .contact-us .email input[type="text"],
+  textarea {
+    width: 150px;
+  }
 }

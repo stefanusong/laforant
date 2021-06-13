@@ -616,3 +616,10 @@ textarea {
     font-size: 8px;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .footer .contact-us .email input[type="text"],
+  textarea {
+    width: 150px;
+  }
+}
