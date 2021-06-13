@@ -7,22 +7,59 @@
     <title>Register</title>
     <link rel="stylesheet" href="./../CSS/register.css" />
     <script src="./../JS/regist-validation.js"></script>
+    <script src="./../JS/home.js"></script>
   </head>
   <body>
-
-    <div class="title">
-        <h1>Pre-Register</h1>
-        <p>Register yourself to participate in the next beta test.</h6>
+    <!-- Header -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img src="./../Assets/home/logo-design-purple.png" alt="" />
+        </a>
+        <div class="navbar-toggle" onclick="toggleNavbarNav()">
+          <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </div>
+      </div>
+      <div class="nav">
+        <div class="nav-item">
+          <a href="./home.html"><div class="nav-link">HOME</div></a>
+        </div>
+        <div class="nav-item dropdown">
+          <a href="#"><div class="nav-link">ABOUT GAME &#9660;</div></a>
+          <div class="dropdown-menu">
+            <a href="./maps.html"><div class="dropdown-item">MAPS</div></a>
+            <a href="./agents.html"><div class="dropdown-item">AGENTS</div></a>
+            <a href="./spec.html"><div class="dropdown-item">SPEC REQ</div></a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="./register.html"><div class="nav-btn">PRE-REGISTER</div></a>
+        </div>
+      </div>
     </div>
-    
+
+    <!-- title -->
+    <div class="title">
+      <h1>Pre-Register</h1>
+      <p>Register yourself to participate in the next beta test.</p>
+    </div>
+
+    <!-- modal box -->
     <div class="modal-container" id="modalbox">
       <div class="modal-card">
         <div class="modal-icon">
-          <img src="./../Assets/pre-register/ic_checkbox.png" alt="">
+          <img src="./../Assets/pre-register/ic_checkbox.png" alt="" />
         </div>
         <div class="modal-msg">
           <h2>Great !</h2>
-          <p>Your account has been registered successfully to participate the next Beta update.</p>
+          <p>
+            Your account has been registered successfully to participate the
+            next Beta update.
+          </p>
         </div>
         <div class="modal-btn-container">
           <button class="modal-btn home-btn" id="home-btn">Back to Home</button>
@@ -30,21 +67,21 @@
         </div>
       </div>
     </div>
-    
 
+    <!-- form inputs -->
     <div class="form-container">
       <form action="post">
         <div class="input-container">
           <div class="label">
-              <label for="username">Username</label>
+            <label for="username">Username</label>
           </div>
           <div class="input">
-              <input
+            <input
               name="username"
               id="username"
               type="text"
               placeholder="Enter your username..."
-          />
+            />
           </div>
           <div class="error-msg">
             <label id="error-username"></label>
@@ -52,91 +89,168 @@
         </div>
 
         <div class="input-container">
-            <div class="label">
-                <label for="email">Email</label>
-            </div>
-            <div class="input">
-                <input
-                name="email"
-                id="email"
-                type="text"
-                placeholder="Enter your email address..."
+          <div class="label">
+            <label for="email">Email</label>
+          </div>
+          <div class="input">
+            <input
+              name="email"
+              id="email"
+              type="text"
+              placeholder="Enter your email address..."
             />
-            </div>
-            <div class="error-msg">
-              <label id="error-email"></label>
-            </div>
+          </div>
+          <div class="error-msg">
+            <label id="error-email"></label>
+          </div>
         </div>
 
         <div class="input-container">
-            <div class="label">
-                <label for="password">Password</label>
-            </div>
-            <div class="input">
-                <input
-                name="password"
-                id="password"
-                type="password"
-                placeholder="Enter your password..."
+          <div class="label">
+            <label for="password">Password</label>
+          </div>
+          <div class="input">
+            <input
+              name="password"
+              id="password"
+              type="password"
+              placeholder="Enter your password..."
             />
-            </div>
-            <div class="error-msg">
-              <label id="error-password"></label>
-            </div>
+          </div>
+          <div class="error-msg">
+            <label id="error-password"></label>
+          </div>
         </div>
 
         <div class="input-container">
-            <div class="label">
-                <label for="dob">Date of birth</label>
-            </div>
-            <div class="input">
-                <input name="dob" id="dob" type="date" />
-            </div>
-            <div class="error-msg">
-              <label id="error-dob"></label>
-            </div>
+          <div class="label">
+            <label for="dob">Date of birth</label>
+          </div>
+          <div class="input">
+            <input name="dob" id="dob" type="date" />
+          </div>
+          <div class="error-msg">
+            <label id="error-dob"></label>
+          </div>
         </div>
 
         <div class="input-container">
-            <div class="label">
-                <label for="nationality">Nationality</label>
-            </div>
+          <div class="label">
+            <label for="nationality">Nationality</label>
+          </div>
 
-            <div class="input">
-              <select name="nationality" id="nationality">
-                <option selected disabled value="">Select your nationality ...</option>
-                <option value="Afganistan">Afghanistan</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Australia">Australia</option>
-                <option value="Brazil">Brazil</option>
-                <option value="England">England</option>
-                <option value="India">India</option>
-                <option value="Indonesia">Indonesia</option>
-                <option value="Korea">Korea</option>
-                <option value="Singapore">Singapore</option>
-                <option value="Thailand">Thailand</option>
-                <option value="USA">USA</option>
-                <option value="Vietnam">Vietnam</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            
-            <div class="error-msg">
-              <label id="error-nationality"></label>
-            </div>
+          <div class="input">
+            <select name="nationality" id="nationality">
+              <option selected disabled value="">
+                Select your nationality ...
+              </option>
+              <option value="Afganistan">Afghanistan</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Australia">Australia</option>
+              <option value="Brazil">Brazil</option>
+              <option value="England">England</option>
+              <option value="India">India</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Korea">Korea</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Thailand">Thailand</option>
+              <option value="USA">USA</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="error-msg">
+            <label id="error-nationality"></label>
+          </div>
         </div>
 
         <div class="agreement">
-          <input type="checkbox" name="agreement" id="agreement">
+          <input type="checkbox" name="agreement" id="agreement" />
           <label for="agreement">I agree to the Terms of Service</label>
         </div>
         <div class="error-msg">
           <label id="error-agreement"></label>
         </div>
       </form>
-      
+
       <div class="btn-container">
         <button id="form-submit-btn" onclick="validate()">Submit</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="social">
+        <div class="footer-logo">
+          <img src="./../Assets/home/logo-design-white.png" alt="" />
+        </div>
+        <div class="social-media">
+          <div class="youtube">
+            <a href="https://www.youtube.com"
+              ><img src="./../Assets/footer/ic_youtube.png" alt=""
+            /></a>
+          </div>
+          <div class="instagram">
+            <a href="https://www.instagram.com"
+              ><img src="./../Assets/footer/ic_instagram.png" alt=""
+            /></a>
+          </div>
+          <div class="twitter">
+            <a href="https://www.twitter.com"
+              ><img src="./../Assets/footer/ic_twitter.png" alt=""
+            /></a>
+          </div>
+          <div class="facebook">
+            <a href="https://www.facebook.com"
+              ><img src="./../Assets/footer/ic_facebook.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="vl"></div>
+      <div class="hl"></div>
+      <div class="quick-links">
+        <div class="title">Quick Links</div>
+        <div class="links">
+          <div class="link-item">
+            <a href="./home.html">HOME</a>
+          </div>
+          <div class="link-item">
+            <a href="./maps.html">MAPS</a>
+          </div>
+          <div class="link-item">
+            <a href="./agents.html">AGENTS</a>
+          </div>
+          <div class="link-item">
+            <a href="./spec.html">SPEC REQUIREMENT</a>
+          </div>
+          <div class="link-item">
+            <a href="./register.html">PRE REGISTER</a>
+          </div>
+        </div>
+      </div>
+      <div class="vl"></div>
+      <div class="hl"></div>
+      <div class="contact-us">
+        <div class="title">Contact Us</div>
+        <form action="">
+          <div class="email">
+            <input type="text" placeholder="Email Address" />
+          </div>
+          <div class="message">
+            <textarea
+              name=""
+              id=""
+              cols="50"
+              rows="4"
+              placeholder="Message..."
+            ></textarea>
+          </div>
+          <div class="footer-btn">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
       </div>
     </div>
   </body>

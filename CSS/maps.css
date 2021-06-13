@@ -147,7 +147,7 @@ a {
     color: white;
     font-size: 4em;
     font-weight: bold;
-    top: 3%
+    top: 3%;
 }
 
 .card-container {
@@ -157,6 +157,7 @@ a {
     overflow: hidden;
     width : 990px;
     height: 505px;
+    margin-top: 70px;
 }
 
 .card-slider {

@@ -231,6 +231,10 @@ a {
     margin-right: 10px;
 }
 
+.content-2 .subcontent-1{
+    margin-right: 70px;
+}
+
 .content-2 .subcontent-2 {
     display: flex;
     flex-direction: column;
