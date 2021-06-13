@@ -549,3 +549,36 @@ textarea {
         display: block;
     }
 }
+
+@media only screen and (max-width: 450px) {
+
+    .content-title {
+        font-size: 2em;
+    }
+
+    .card-nonslider {
+        border-radius: 50px;
+        width: 200px;
+        height: auto;
+        margin: 20px;
+    }
+      
+    .card-nonslider img {
+        height: 150px;
+    }
+    
+    .description .title {
+        font-size: 1em;
+    }
+    
+    .description .content {
+        font-size: 0.7em;
+    }
+
+    /* FOOTER SECTION */
+
+    .footer .contact-us .email input[type=text],
+    textarea {
+        width: 150px;
+    }
+}

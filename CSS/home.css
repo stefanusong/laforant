@@ -595,3 +595,71 @@ textarea {
         display: block;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .banner {
+        height: 300px;
+    }
+
+    .banner-content .banner-title {
+        font-size: 3em;
+    }
+    
+    .banner-content .banner-description {
+        font-size: 0.7em;
+    }
+
+    .content-1 img {
+        max-width: 150px;
+    }
+
+    .content-2 img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .content-3 img {
+        max-width: 250px;
+    }
+
+    .title {
+        font-size: 2em;
+        padding-bottom: 50px;
+    }
+    
+    .heading {
+        font-size: 1.5em;
+    }
+    
+    .description {
+        font-size: 0.7em;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .banner-content .banner-title {
+        font-size: 2em;
+    }
+    
+    .banner-content .banner-description {
+        font-size: 0.7em;
+    }
+
+    .content-1 img {
+        max-width: 100px;
+    }
+
+    .content-2 img {
+        max-width: 100px;
+    }
+
+    .content-3 img {
+        max-width: 100px;
+    }
+
+    .footer .contact-us .email input[type=text],
+    textarea {
+        width: 150px;
+    }
+}
