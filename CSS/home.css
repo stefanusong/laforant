@@ -553,6 +553,21 @@ textarea {
         height: 500px;
     }
 
+    .banner-content .banner-title {
+        font-size: 4em;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .banner-content .banner-description {
+        font-size: 0.8em;
+        align-self: center;
+    }
+
+    .container {
+        padding: 25px
+    }
+
     /* FOOTER SECTION */
 
     .footer {
